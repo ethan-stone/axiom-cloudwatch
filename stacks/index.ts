@@ -6,8 +6,8 @@ export default function (app: App) {
     runtime: "nodejs16.x",
     srcPath: "services",
     bundle: {
-      format: "esm",
-    },
+      format: "cjs"
+    }
   });
   app.stack(MyStack);
 }
